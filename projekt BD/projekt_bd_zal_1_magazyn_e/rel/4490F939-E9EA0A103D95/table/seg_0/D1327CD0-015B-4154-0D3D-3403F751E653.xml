@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1327CD0-015B-4154-0D3D-3403F751E653" name="Rodzaje pracownikow">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>A43C3F8E-1C50-B97F-3B50-57B0D60E8F65</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<ordsAlias>rodzaje_pracownikow</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RP_ID" id="F7E91741-499D-AA12-76C9-0ED600BF227D">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>B1BB4E46-C6CB-EF1E-0570-1BDABE8DC1F2</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwa" id="8D7EC260-FC16-A8A7-7892-9250CAF088F4">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>40FF3388-2106-C4D5-45D9-5B53FF383B73</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Czy_uprawnienia_na_ww" id="9B0EEE5A-AF82-21F2-0E3A-F8AB28187CFE">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>BFAF0EB9-7D81-9DB4-287B-5F9077489DA1</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pracownicy_PR_ID" id="02ABC239-BA71-F330-C947-12DA34CEA213">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>1B112AE2-9BFF-D8CB-F99D-A9185AA29CBA</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6E7A472-BE08-30D5-C756-601213EC9833" referredColumn="D065130A-29AD-22E5-1E74-048054BEB36F"/>
+</associations>
+</Column>
+<Column name="czy_moze_kozystac_z_wp" id="EE9C8B66-132F-36AF-0981-E61933A8E5CF">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>5A3B2C43-3BFF-97DD-AF3B-5FEADC2CB9A4</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92D7BB6D-38FB-A9B9-6DBE-51C31E4F2468" name="Rodzaje_pracownikow_PK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>CC03818B-505F-D09C-27D6-DE7C3BB685ED</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7E91741-499D-AA12-76C9-0ED600BF227D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59A6ACA6-31BB-A62B-335A-9B59529DDFFB" name="Rodzaje pracownikow__IDX">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>179B9D1A-6ED6-0C0E-F2EF-6A49226F0477</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="02ABC239-BA71-F330-C947-12DA34CEA213"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD59B672-2E91-5B1D-70AB-E4823C41D6F3" name="Rodzaje_pracownikow_Pracownicy_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-22 18:10:25 UTC</createdTime>
+<generatorID>179B9D1A-6ED6-0C0E-F2EF-6A49226F0477</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02ABC239-BA71-F330-C947-12DA34CEA213"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

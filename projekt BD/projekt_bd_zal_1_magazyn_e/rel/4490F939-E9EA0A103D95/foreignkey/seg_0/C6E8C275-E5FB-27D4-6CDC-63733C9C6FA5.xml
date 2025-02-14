@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C6E8C275-E5FB-27D4-6CDC-63733C9C6FA5" containerWithKeyObject="2666A721-64CB-92B7-DA9E-8FA075DBE4FA" localFKIndex="D78E703E-3CB6-F723-F999-28A1F5237E55" name="Towary_Palety_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>931DD1CE-6BCE-B0EE-CF5C-05B7A6E0030E</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<referredTableLongName>Palety</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C1FA288-40B5-3130-637C-FDDB2E32D6F6</referredTableID>
+<keyObject>40BDD445-BBDC-F7D2-5C02-3ADB0E8D73B8</keyObject>
+<referredKeyID>40BDD445-BBDC-F7D2-5C02-3ADB0E8D73B8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PA_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

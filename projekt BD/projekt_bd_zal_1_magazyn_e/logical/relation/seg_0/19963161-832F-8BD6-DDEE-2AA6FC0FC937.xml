@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_16" directorySegmentName="seg_0" id="19963161-832F-8BD6-DDEE-2AA6FC0FC937">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 19:16:23 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<sourcePk>5DA44EE0-8634-AD13-8C66-D674CA10CF13</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>jest wykorzystywany</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F911D85C-38F3-229C-C357-98F3CE9CD14F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B7A111CA-C00A-969D-8C49-2E673336EA8A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

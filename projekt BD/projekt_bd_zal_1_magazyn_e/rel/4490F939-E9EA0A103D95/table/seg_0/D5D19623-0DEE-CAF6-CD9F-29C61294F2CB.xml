@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5D19623-0DEE-CAF6-CD9F-29C61294F2CB" name="WW_RP">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>11CB88E0-74F9-8F67-BFC5-5381D9E9B329</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Wozki_widlowe_WW_ID" id="29CE3FEB-353F-609D-B0B6-15D2BB117314">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>1A49FB9F-4888-3092-8F0A-33B7A5FAE783</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87F57577-8A34-7E66-561D-61BA211D9002" referredColumn="4A117353-0B3E-EA7B-AF2F-B7CC6D936A47"/>
+</associations>
+</Column>
+<Column name="Rodzaje_pracownikow_RP_ID" id="C6B0776C-2627-BC0B-66E0-CE6BB1CD322B">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>96CDE62F-2F02-462C-0908-287E0267A8ED</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="519B5D4D-9766-DC69-0E44-66F4568E76B4" referredColumn="F7E91741-499D-AA12-76C9-0ED600BF227D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C345E9D9-40A8-CD42-DCFB-F070FAFCA3AA" name="WW_RP_PK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>E6BFD905-3136-437D-8879-EE4D29490F8F</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29CE3FEB-353F-609D-B0B6-15D2BB117314"/>
+<colUsage columnID="C6B0776C-2627-BC0B-66E0-CE6BB1CD322B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3319E4E-AC33-668C-4993-1A9327DD3864" name="WW_RP_Wozki_widlowe_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>E8E23C0A-6F8B-A75C-89FA-C20F75A30FE1</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29CE3FEB-353F-609D-B0B6-15D2BB117314"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0E332D2-11A5-8E0A-B2BA-70A97C2A778B" name="WW_RP_Rodzaje_pracownikow_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>9A1A7384-B29A-BB9C-955E-CEBD222648E3</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6B0776C-2627-BC0B-66E0-CE6BB1CD322B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

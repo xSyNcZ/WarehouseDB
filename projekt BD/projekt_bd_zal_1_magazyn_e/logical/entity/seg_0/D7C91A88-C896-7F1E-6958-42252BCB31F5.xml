@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D7C91A88-C896-7F1E-6958-42252BCB31F5" name="Hala">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:17 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Hale</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="H_ID" id="5AF23C7A-70FF-0507-DF23-8B0563E81A4E">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:17 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numer" id="0254FE7C-1DCE-77E1-119E-B4A43B942069">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:17 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Powierzchnia w metrach kwad" id="EDACFDEA-9CC1-62B0-88D5-56B73310FA83">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:17 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0041DA86-A3AC-F601-0555-E34E10700CAD" name="Entity_1 PK">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:17 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5AF23C7A-70FF-0507-DF23-8B0563E81A4E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

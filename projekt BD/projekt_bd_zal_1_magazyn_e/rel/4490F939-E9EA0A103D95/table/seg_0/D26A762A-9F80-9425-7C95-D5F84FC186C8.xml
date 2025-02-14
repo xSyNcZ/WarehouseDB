@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D26A762A-9F80-9425-7C95-D5F84FC186C8" name="Pracownicy">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>BEF0B69F-F9B1-AA4C-4FF1-015886D0C9B7</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PR_ID" id="D065130A-29AD-22E5-1E74-048054BEB36F">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>755308C3-A174-3302-C124-37DB694DEF2C</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Wynagrodzenie" id="B04FA9B0-FB7E-8C1D-20C5-33FAA9DBD7A6">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>F1B599E5-4696-4BBC-F4D4-F6CEA36203E2</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Plec" id="BB68C4B9-F416-A32A-AEC7-334A03A0DFED">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>F16E87A3-24C9-C3C4-C11F-4F73E29B2A45</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_zatrudnienia" id="C844A228-CAA7-D247-B343-0E0C83E4F2C8">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>0CB1206C-4FA7-C79B-8259-437EC3DE0F5F</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dzialy_DZ_ID" id="CF21B234-1DBC-358A-91DC-19875843793A">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>2377FC65-6EC0-D49B-BF5F-E7A9A2E16F4B</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA93C7F7-2F1A-E99F-1C99-7D03FA863463" referredColumn="11673404-713C-AAAE-1AB3-8B067EFA9AA3"/>
+</associations>
+</Column>
+<Column name="Imie" id="46BE8D26-9532-AD19-ADE1-28B1B4EB141C">
+<createdBy>Mateusz</createdBy>
+<createdTime>2025-01-24 16:06:16 UTC</createdTime>
+<generatorID>BD323451-97B5-B3BC-D502-932309C518F1</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>38 CHAR</dataTypeSize>
+<ownDataTypeParameters>38 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwisko" id="CFFAB4BA-D8B3-B32E-5D86-421E8A36122F">
+<createdBy>Mateusz</createdBy>
+<createdTime>2025-01-24 16:06:16 UTC</createdTime>
+<generatorID>FC5DCFCB-399F-001A-015C-242B6DC51C52</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>38 CHAR</dataTypeSize>
+<ownDataTypeParameters>38 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EDB2D720-EDB9-2549-535A-32A3D2D9810A" name="Pracownicy_PK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>D905B3F8-A069-4A4F-47EE-7C5697606F87</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D065130A-29AD-22E5-1E74-048054BEB36F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56212CD3-EB45-2B2E-EC2D-D0B2A7AAC700" name="Pracownicy_Dzialy_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>E6D5639B-3E15-FECA-62B1-1788EF90885F</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF21B234-1DBC-358A-91DC-19875843793A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

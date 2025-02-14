@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E491712C-29E0-7DAA-494E-A400042C7B13" containerWithKeyObject="7421FDB3-54E0-E832-7C64-5B6C7D4BCFE8" localFKIndex="817E28BE-0A54-DE4B-7152-BBB6693D60F9" name="Regaly_Hale_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>4CE2A15E-6970-5C0C-ECEE-CB4F3A33EC91</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<referredTableLongName>Hale</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>109262E8-6155-FC71-4688-4C0D096E63FC</referredTableID>
+<keyObject>B161E515-8A00-03D5-30B1-91D54F7BE41B</keyObject>
+<referredKeyID>B161E515-8A00-03D5-30B1-91D54F7BE41B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>H_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

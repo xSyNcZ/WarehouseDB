@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D2218398-D8DC-8E25-0106-4E2E08B93B36" name="Dzial">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:18 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Dzialy</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DZ_ID" id="264D2759-252C-3FFB-AAFD-866AF94AC2DC">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:18 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nazwa" id="4296EA90-B82F-A4A0-3BAC-14520CA63E29">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:18 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Pomieszczenie" id="B1BCC865-B3E9-D860-6790-FEDBE3AE980F">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:18 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="H_ID" id="003D675E-80D8-6C11-5BDD-51FF8CAACA7B">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 19:05:33 UTC</createdTime>
+<generatorID>1C4B3164-48F0-E663-847B-8BBB43111B22</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<referedAttribute>5AF23C7A-70FF-0507-DF23-8B0563E81A4E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5814D373-D511-67C5-0ADB-9B5E7366E2C7" name="Entity_1 PK">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:18 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>264D2759-252C-3FFB-AAFD-866AF94AC2DC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

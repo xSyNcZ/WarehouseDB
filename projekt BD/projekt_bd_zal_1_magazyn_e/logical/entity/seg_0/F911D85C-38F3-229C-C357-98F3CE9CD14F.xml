@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F911D85C-38F3-229C-C357-98F3CE9CD14F" name="Wozek paletowy">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:31 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Wozki paletowe</preferredAbbreviation>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="WP_ID" id="79804839-2EE7-0A4B-2B85-44C50116D955">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:31 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Maksymalne obciazenie" id="ACDC621B-9DBC-EAF3-9A75-BF72E9878341">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:31 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Typ" id="54D6AC0D-D3D3-BE0B-07A8-C934CD0EA060">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 18:40:40 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5DA44EE0-8634-AD13-8C66-D674CA10CF13" name="Entity_1 PK">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:49:31 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>79804839-2EE7-0A4B-2B85-44C50116D955</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

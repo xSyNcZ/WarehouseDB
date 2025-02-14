@@ -1,0 +1,155 @@
+-- 1. Use Case: Łączenie tabel / Funkcja grupowa / Grupowanie danych / Sortowanie
+-- Opis: To zapytanie liczy liczbę pracowników oraz oblicza średnie wynagrodzenie w każdym dziale.
+-- Zawiera:
+-- 1. Łączenie tabel: "pracownicy" i "dzialy" (JOIN).
+-- 2. Funkcje grupowe: COUNT (liczba pracowników), AVG (średnie wynagrodzenie).
+-- 3. Grupowanie danych: po nazwie działu.
+-- 4. Sortowanie danych: wyniki posortowane alfabetycznie po nazwie działu.
+
+SELECT d.nazwa AS dzial,
+       COUNT(p.PR_ID) AS liczba_pracownikow,
+       AVG(p.Wynagrodzenie) AS srednie_wynagrodzenie
+FROM pracownicy p
+JOIN dzialy d ON p.Dzialy_DZ_ID = d.dz_id
+GROUP BY d.nazwa
+ORDER BY d.nazwa;
+
+
+-- 2. Use Case: Łączenie tabel / Funkcja grupowa / Grupowanie danych
+-- Opis: Zapytanie liczy liczbę wózków widłowych przypisanych do każdego pracownika.
+-- Zawiera:
+-- 1. Łączenie tabel: "pracownicy", "Rodzaje pracownikow", "ww_rp" oraz "Wozki widlowe".
+-- 2. Funkcja grupowa: COUNT (liczba wózków widłowych).
+-- 3. Grupowanie danych: po imieniu i nazwisku pracownika.
+
+SELECT p.Imie, p.Nazwisko, COUNT(ww.ww_id) AS liczba_wozkow
+FROM pracownicy p
+JOIN "Rodzaje pracownikow" rp ON p.PR_ID = rp.pracownicy_pr_id
+JOIN ww_rp wrp ON rp.rp_id = wrp.rodzaje_pracownikow_rp_id
+JOIN "Wozki widlowe" ww ON wrp.wozki_widlowe_ww_id = ww.ww_id
+GROUP BY p.Imie, p.Nazwisko;
+
+
+-- 3. Use case:  Funkcja jednowierszowa numeryczna i funkcja obsługująca NULL
+-- Opis: Zapytanie wyświetla imiona, nazwiska i wynagrodzenia pracowników.
+-- Jeśli wynagrodzenie jest NULL, zostaje zastąpione przez 'Brak'.
+-- Zawiera:
+-- 1. Funkcja obsługująca NULL: CASE (zastąpienie NULL tekstem 'Brak').
+-- 2. Funkcja numeryczna: ROUND (zaokrąglenie wynagrodzenia).
+-- 3. Funkcja konwersji typów: TO_CHAR (przekształcenie wynagrodzenia na tekst).
+
+SELECT p.Imie, p.Nazwisko, 
+       CASE 
+           WHEN p.Wynagrodzenie IS NULL THEN 'Brak' -- Zastąpienie NULL tekstem 'Brak'
+           ELSE TO_CHAR(ROUND(p.Wynagrodzenie, 2)) -- Wartość wynagrodzenia jako tekst, zaokrąglona do 2 miejsc po przecinku
+       END AS wynagrodzenie, -- Funkcja obsługująca NULL i zaokrąglająca
+       d.nazwa AS dzial
+FROM pracownicy p
+JOIN dzialy d ON p.Dzialy_DZ_ID = d.dz_id -- JOIN na tabeli pracownicy i dzialy
+WHERE p.Wynagrodzenie IS NOT NULL; -- Warunek, aby uwzględnić tylko pracowników z wynagrodzeniem
+
+
+-- 4. Use Case: Łączenie tabel, Funkcje numeryczne, Grupowanie danych
+-- Opis: Zapytanie sumuje powierzchnię regałów w działach, obliczając łączną powierzchnię regałów.
+-- Zawiera:
+-- 1. Łączenie tabel: "hale", "regaly" oraz "dzialy".
+-- 2. Funkcje numeryczne: SUM (łączna powierzchnia regałów).
+-- 3. Grupowanie danych: po nazwie działu.
+SELECT d.nazwa AS dzial, SUM(h.powierzchnia_w_metrach_kwad) AS laczna_powierzchnia
+FROM hale h
+JOIN regaly r ON h.h_id = r.hale_h_id
+JOIN dzialy d ON r.hale_h_id = d.hale_h_id
+GROUP BY d.nazwa;
+
+-- 5. Use Case: Funkcja do obsługi dat, Łączenie tabel, Funkcja konwersji typów danych, Grupowanie danych
+-- Opis: To zapytanie liczy liczbę towarów przyjętych w określonym okresie oraz ich kategorie.
+-- Zawiera:
+-- 1. Łączenie tabel: "towary" oraz "Kategorie towaru".
+-- 2. Funkcja do obsługi dat: TO_DATE (konwersja tekstu na datę).
+-- 3. Funkcja konwersji typów danych: TO_DATE (konwersja tekstu na datę).
+-- 4. Grupowanie danych: po nazwie towaru i kategorii towaru.
+SELECT t.nazwa AS towar, kt.nazwa AS kategoria, COUNT(t.t_id) AS liczba_towarow
+FROM towary t
+JOIN "Kategorie towaru" kt ON t.kategorie_towaru_kat_id = kt.kat_id
+WHERE t.data_przyjecia BETWEEN TO_DATE('2022-01-01', 'YYYY-MM-DD') AND TO_DATE('2024-01-31', 'YYYY-MM-DD')
+GROUP BY t.nazwa, kt.nazwa;
+
+-- 6. Use Case: Łączenie tabel, Funkcja numeryczna, Grupowanie danych
+-- Opis: To zapytanie sumuje powierzchnię regałów w działach, podobnie jak w przypadku 4.
+-- Zawiera:
+-- 1. Łączenie tabel: "hale", "regaly", "dzialy".
+-- 2. Funkcje numeryczne: SUM (łączna powierzchnia regałów).
+-- 3. Grupowanie danych: po nazwie działu.
+SELECT d.nazwa AS dzial, SUM(h.powierzchnia_w_metrach_kwad) AS laczna_powierzchnia
+FROM hale h
+JOIN regaly r ON h.h_id = r.hale_h_id
+JOIN dzialy d ON r.hale_h_id = d.hale_h_id
+GROUP BY d.nazwa;
+
+-- 7. Use Case: Łączenie tabel, Sortowanie
+-- Opis: Zapytanie wyświetla pracowników w danym dziale (pomieszczenie '101') posortowanych według daty zatrudnienia.
+-- Zawiera:
+-- 1. Łączenie tabel: "pracownicy" oraz "dzialy".
+-- 2. Sortowanie danych: według daty zatrudnienia.
+SELECT p.Imie, p.Nazwisko, p.Data_zatrudnienia
+FROM pracownicy p
+JOIN dzialy d ON p.Dzialy_DZ_ID = d.dz_id
+WHERE d.pomieszczenie = '101'
+ORDER BY p.Data_zatrudnienia;
+
+-- 8 Use Case: Podzapytanie nieskorelowane
+-- Opis: Zapytanie wyświetla pracowników, których wynagrodzenie jest wyższe niż średnia wynagrodzeń we wszystkich firmach.
+-- Zawiera: Podzapytanie nieskorelowane, JOIN, SELECT, WHERE.
+SELECT p.Imie, p.Nazwisko, p.Wynagrodzenie
+FROM pracownicy p
+WHERE p.Wynagrodzenie > (
+    SELECT AVG(Wynagrodzenie) -- Nieskorelowane podzapytanie
+    FROM pracownicy
+); 
+
+-- 9 Use Case: Podzapytanie skorelowane i funkcja znakowa
+-- Opis: Zapytanie wyświetla pracowników, którzy zarabiają więcej niż średnia wynagrodzenia w ich dziale.
+-- Funkcja znakowa: Dodanie "Panie/Pani" przed imieniem pracownika w zależności od płci.
+
+SELECT 
+    CASE 
+        WHEN p.Plec = 'M' THEN 'Pan ' || p.Imie    -- Funkcja znakowa dla mężczyzn
+        WHEN p.Plec = 'K' THEN 'Pani ' || p.Imie   -- Funkcja znakowa dla kobiet
+        ELSE p.Imie
+    END AS imie_zmodyfikowane,  -- Modyfikacja imienia
+    p.Nazwisko,                  -- Nazwisko
+    p.Wynagrodzenie              -- Wynagrodzenie
+FROM 
+    pracownicy p
+WHERE 
+    p.Wynagrodzenie >= (
+        SELECT AVG(p2.Wynagrodzenie)  -- Podzapytanie skorelowane
+        FROM pracownicy p2
+        WHERE p.Dzialy_DZ_ID = p2.Dzialy_DZ_ID  -- Skorelowane po dziale
+    );
+
+
+
+
+
+
+-- 10 use case:  Łączenie 5 tabel
+-- Opis: Zapytanie zlicza liczbę pracowników w każdym dziale oraz średnie wynagrodzenie w danym dziale
+-- Zawiera: Łączenie tabel, funkcję COUNT i AVG.
+
+SELECT 
+    d.nazwa AS dzial,                  -- Nazwa działu
+    COUNT(p.PR_ID) AS liczba_pracownikow, -- Liczba pracowników w dziale
+    AVG(p.Wynagrodzenie) AS srednie_wynagrodzenie -- Średnie wynagrodzenie w dziale
+FROM 
+    dzialy d
+JOIN 
+    pracownicy p ON p.Dzialy_DZ_ID = d.dz_id   -- Łączenie z tabelą pracownicy
+JOIN 
+    "Rodzaje pracownikow" rp ON rp.pracownicy_pr_id = p.PR_ID -- Łączenie z tabelą rodzaje pracowników
+JOIN 
+    wp_rp wprp ON wprp.rodzaje_pracownikow_rp_id = rp.rp_id -- Łączenie z tabelą wp_rp
+JOIN 
+    "Wozki paletowe" wp ON wp.wp_id = wprp.wozki_paletowe_wp_id -- Łączenie z tabelą wozki_paletowe
+GROUP BY 
+    d.nazwa;  -- Grupowanie po nazwie działu

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9B33D41C-F6E6-E183-633C-D0217ED2B1E8" containerWithKeyObject="F7E1541B-A1A4-BECD-7FA9-41C752052847" localFKIndex="FFB06B6A-69F5-F7F7-96AF-B439DA6562B1" name="Miejsca_na_palety_Regaly_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>40DB96DC-22FF-800E-D997-BDB15361DE10</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<referredTableLongName>Regaly</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7421FDB3-54E0-E832-7C64-5B6C7D4BCFE8</referredTableID>
+<keyObject>56451273-D63D-FACB-0214-7B579040DC67</keyObject>
+<referredKeyID>56451273-D63D-FACB-0214-7B579040DC67</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>R_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

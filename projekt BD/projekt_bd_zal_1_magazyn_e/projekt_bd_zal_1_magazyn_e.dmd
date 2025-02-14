@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="projekt_bd_zal_1_magazyn_e" id="A4631DAD-89E2-D02C-9390-B5584A98BDC1" version="3.5">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 17:47:44 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A4631DAD-89E2-D02C-9390-B5584A98BDC1</designId>
+</OSDM_Design>

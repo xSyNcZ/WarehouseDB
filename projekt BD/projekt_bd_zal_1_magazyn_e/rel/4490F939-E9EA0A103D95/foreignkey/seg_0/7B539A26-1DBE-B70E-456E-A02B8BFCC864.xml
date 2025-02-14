@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7B539A26-1DBE-B70E-456E-A02B8BFCC864" containerWithKeyObject="699AAFB0-5763-8B26-D8AA-764E550DF7ED" localFKIndex="BCF232F9-B79F-8A75-8EE6-A4A33F949D5E" name="WP_RP_Rodzaje_pracownikow_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>D2515851-9D74-28A8-0FE5-831A2CFB9166</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<referredTableLongName>Rodzaje pracownikow</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D1327CD0-015B-4154-0D3D-3403F751E653</referredTableID>
+<keyObject>92D7BB6D-38FB-A9B9-6DBE-51C31E4F2468</keyObject>
+<referredKeyID>92D7BB6D-38FB-A9B9-6DBE-51C31E4F2468</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>RP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

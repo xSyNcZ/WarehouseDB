@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B7A111CA-C00A-969D-8C49-2E673336EA8A" name="WP_RP">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 19:15:36 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RP_ID" id="B4035816-DAD1-2D9F-38D5-E5B7763EB318">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 19:15:50 UTC</createdTime>
+<generatorID>D2515851-9D74-28A8-0FE5-831A2CFB9166</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<referedAttribute>B1BB4E46-C6CB-EF1E-0570-1BDABE8DC1F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WP_ID" id="6FFA6F0C-7159-D942-C654-2F6E5F519D8E">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 19:16:23 UTC</createdTime>
+<generatorID>19963161-832F-8BD6-DDEE-2AA6FC0FC937</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="true"/>
+</engineerTo>
+<referedAttribute>79804839-2EE7-0A4B-2B85-44C50116D955</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D5B3B0A7-E5C9-BE8F-C929-70D0391B8365" name="WP_RP PK">
+<createdBy>88245</createdBy>
+<createdTime>2024-12-18 19:16:05 UTC</createdTime>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4490F939-7EF6-9DBD-33DD-E9EA0A103D95" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B4035816-DAD1-2D9F-38D5-E5B7763EB318</attributeRef>
+<attributeRef>6FFA6F0C-7159-D942-C654-2F6E5F519D8E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

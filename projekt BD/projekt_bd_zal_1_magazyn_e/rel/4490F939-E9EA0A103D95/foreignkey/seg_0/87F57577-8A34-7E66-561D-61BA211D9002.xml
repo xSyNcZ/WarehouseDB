@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="87F57577-8A34-7E66-561D-61BA211D9002" containerWithKeyObject="D5D19623-0DEE-CAF6-CD9F-29C61294F2CB" localFKIndex="C3319E4E-AC33-668C-4993-1A9327DD3864" name="WW_RP_Wozki_widlowe_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>E8E23C0A-6F8B-A75C-89FA-C20F75A30FE1</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<referredTableLongName>Wozki widlowe</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>221512DE-AF92-374E-DDCD-6F9144E2CD66</referredTableID>
+<keyObject>455681E1-7D22-49F5-A10F-7F6F070C6DF1</keyObject>
+<referredKeyID>455681E1-7D22-49F5-A10F-7F6F070C6DF1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>WW_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

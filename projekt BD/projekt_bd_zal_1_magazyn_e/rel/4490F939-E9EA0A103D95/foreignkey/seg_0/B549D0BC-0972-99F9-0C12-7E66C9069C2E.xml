@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B549D0BC-0972-99F9-0C12-7E66C9069C2E" containerWithKeyObject="7C1FA288-40B5-3130-637C-FDDB2E32D6F6" localFKIndex="6C87AD50-7B17-D7A1-4871-D35015C21665" name="Palety_Miejsca_na_palety_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>10227DD5-BDFC-6959-A30A-C63C223EA889</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<referredTableLongName>Miejsca na palety</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F7E1541B-A1A4-BECD-7FA9-41C752052847</referredTableID>
+<keyObject>C9FA495E-1555-437A-E93C-565E348A1737</keyObject>
+<referredKeyID>C9FA495E-1555-437A-E93C-565E348A1737</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6AC1227B-50E1-6F35-D313-EEBE9AB087FA" containerWithKeyObject="699AAFB0-5763-8B26-D8AA-764E550DF7ED" localFKIndex="C0C2F05D-5F49-82CF-6122-EA3B98CEA341" name="WP_RP_Wozki_paletowe_FK">
+<createdBy>88245</createdBy>
+<createdTime>2025-01-15 17:57:40 UTC</createdTime>
+<generatorID>19963161-832F-8BD6-DDEE-2AA6FC0FC937</generatorID>
+<ownerDesignName>projekt_bd_zal_1_magazyn_e</ownerDesignName>
+<referredTableLongName>Wozki paletowe</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E0B0C137-BB9F-2F8F-61E9-435EBD629096</referredTableID>
+<keyObject>F00EF911-1ECA-FAE8-2562-A7ED4A9932ED</keyObject>
+<referredKeyID>F00EF911-1ECA-FAE8-2562-A7ED4A9932ED</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>WP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
